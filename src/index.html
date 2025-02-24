@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>StudyBuddy</title>
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.svg"
+            type="image/x-icon"
+        />
+        <link href="./output.css" rel="stylesheet" />
+    </head>
+    <body
+        class="h-full w-full container m-auto bg-gray-300 font-custom animate-slide-up scrollbar-hide relative"
+    >
+        <!-- Hamburger Menu -->
+        <div
+            id="hamburgerScroll"
+            class="absolute right-0 translate-x-full p-5 h-[100vh] w-[90%] gap-6 border border-gray-600 bg-white z-50 opacity-0 pointer-events-none items-start justify-start flex-col transition-all duration-500 ease-in-out"
+        >
+            <!-- Close Button -->
+            <div
+                id="closebutton"
+                class="h-12 w-12 flex items-center justify-start p-1 cursor-pointer"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="18"
+                    viewBox="0 0 384 512"
+                >
+                    <path
+                        fill="#000000"
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                </svg>
+            </div>
+
+            <!-- First Year -->
+            <a
+                href="./firstyear.html"
+                class="flex items-center justify-start gap-2 hover:scale-105 w-full h-12"
+            >
+                <img
+                    class="h-[50%]"
+                    src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg"
+                    alt="(img)"
+                />
+                <div
+                    class="h-14 text-xl flex items-center justify-center tracking-tighter"
+                >
+                    First year
+                </div>
+            </a>
+
+            <!-- Second Year -->
+            <a
+                href="./secondyear.html"
+                class="flex items-center justify-start gap-2 hover:scale-105 w-full h-12"
+            >
+                <img
+                    class="h-[50%]"
+                    src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg"
+                    alt="(img)"
+                />
+                <div
+                    class="h-14 text-xl flex items-center justify-center tracking-tighter"
+                >
+                    Second year
+                </div>
+            </a>
+        </div>
+
+        <!-- for navigation bar -->
+        <div
+            class="w-full flex items-center justify-between flex-row h-[10vh] px-2 border-b border-black"
+        >
+            <!-- for the left part -->
+            <a
+                href="./index.html"
+                class="flex items-center justify-center gap-4"
+            >
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon-xl-heavy"
+                >
+                    <path
+                        d="M15.6729 3.91287C16.8918 2.69392 18.8682 2.69392 20.0871 3.91287C21.3061 5.13182 21.3061 7.10813 20.0871 8.32708L14.1499 14.2643C13.3849 15.0293 12.3925 15.5255 11.3215 15.6785L9.14142 15.9899C8.82983 16.0344 8.51546 15.9297 8.29289 15.7071C8.07033 15.4845 7.96554 15.1701 8.01005 14.8586L8.32149 12.6785C8.47449 11.6075 8.97072 10.615 9.7357 9.85006L15.6729 3.91287ZM18.6729 5.32708C18.235 4.88918 17.525 4.88918 17.0871 5.32708L11.1499 11.2643C10.6909 11.7233 10.3932 12.3187 10.3014 12.9613L10.1785 13.8215L11.0386 13.6986C11.6812 13.6068 12.2767 13.3091 12.7357 12.8501L18.6729 6.91287C19.1108 6.47497 19.1108 5.76499 18.6729 5.32708ZM11 3.99929C11.0004 4.55157 10.5531 4.99963 10.0008 5.00007C9.00227 5.00084 8.29769 5.00827 7.74651 5.06064C7.20685 5.11191 6.88488 5.20117 6.63803 5.32695C6.07354 5.61457 5.6146 6.07351 5.32698 6.63799C5.19279 6.90135 5.10062 7.24904 5.05118 7.8542C5.00078 8.47105 5 9.26336 5 10.4V13.6C5 14.7366 5.00078 15.5289 5.05118 16.1457C5.10062 16.7509 5.19279 17.0986 5.32698 17.3619C5.6146 17.9264 6.07354 18.3854 6.63803 18.673C6.90138 18.8072 7.24907 18.8993 7.85424 18.9488C8.47108 18.9992 9.26339 19 10.4 19H13.6C14.7366 19 15.5289 18.9992 16.1458 18.9488C16.7509 18.8993 17.0986 18.8072 17.362 18.673C17.9265 18.3854 18.3854 17.9264 18.673 17.3619C18.7988 17.1151 18.8881 16.7931 18.9393 16.2535C18.9917 15.7023 18.9991 14.9977 18.9999 13.9992C19.0003 13.4469 19.4484 12.9995 20.0007 13C20.553 13.0004 21.0003 13.4485 20.9999 14.0007C20.9991 14.9789 20.9932 15.7808 20.9304 16.4426C20.8664 17.116 20.7385 17.7136 20.455 18.2699C19.9757 19.2107 19.2108 19.9756 18.27 20.455C17.6777 20.7568 17.0375 20.8826 16.3086 20.9421C15.6008 21 14.7266 21 13.6428 21H10.3572C9.27339 21 8.39925 21 7.69138 20.9421C6.96253 20.8826 6.32234 20.7568 5.73005 20.455C4.78924 19.9756 4.02433 19.2107 3.54497 18.2699C3.24318 17.6776 3.11737 17.0374 3.05782 16.3086C2.99998 15.6007 2.99999 14.7266 3 13.6428V10.3572C2.99999 9.27337 2.99998 8.39922 3.05782 7.69134C3.11737 6.96249 3.24318 6.3223 3.54497 5.73001C4.02433 4.7892 4.78924 4.0243 5.73005 3.54493C6.28633 3.26149 6.88399 3.13358 7.55735 3.06961C8.21919 3.00673 9.02103 3.00083 9.99922 3.00007C10.5515 2.99964 10.9996 3.447 11 3.99929Z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+                <div class="font-bold">StudyBuddy</div>
+            </a>
+            <!-- for the right part -->
+            <div
+                class="flex items-center justify-center gap-10 max-sm:gap-2 max-sm:hidden"
+            >
+                <!-- for first year notes -->
+                <a
+                    href="./firstyear.html"
+                    class="flex items-center justify-center gap-1 hover:scale-105"
+                >
+                    <img
+                        src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg"
+                        alt="(img)"
+                    />
+                    <div>First year</div>
+                </a>
+                <!-- for second year notes -->
+                <a
+                    href="./secondyear.html"
+                    class="flex items-center justify-center gap-1 hover:scale-105"
+                >
+                    <img
+                        src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg"
+                        alt="(img)"
+                    />
+                    <div>Second year</div>
+                </a>
+            </div>
+            <!-- for mobile view -->
+            <div id="hamburgermenu" class="cursor-pointer hidden max-sm:block">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 448 512"
+                >
+                    <path
+                        fill="#000000"
+                        d="M16 132h416c8.8 0 16-7.2 16-16V84c0-8.8-7.2-16-16-16H16C7.2 68 0 75.2 0 84v32c0 8.8 7.2 16 16 16zm416 64H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0 128H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z"
+                    />
+                </svg>
+            </div>
+        </div>
+        <!-- for the hero section -->
+        <div
+            class="w-full flex items-center justify-between flex-row h-[500px] px-2 border-b border-black max-lg:flex-col max-sm:h-auto max-lg:h-[800px] max-sm:justify-normal max-sm:gap-5"
+        >
+            <!-- for the left images -->
+            <div
+                class="h-full flex w-1/2 relative max-lg:w-[100%] max-sm:h-auto"
+            >
+                <img
+                    class="object-cover rounded-md max-sm:aspect-3/"
+                    src="/images/notes1.webp"
+                    alt="notesimg"
+                />
+                <div
+                    class="w-[200px] h-[1px] bg-black z-10 absolute -rotate-45 -left-10 top-14"
+                ></div>
+                <div
+                    class="w-[170px] h-[1px] bg-black z-10 absolute -rotate-45 -left-[28px] top-[54px]"
+                ></div>
+                <div
+                    class="w-[200px] h-[1px] bg-black z-10 absolute -rotate-45 -right-10 bottom-14"
+                ></div>
+                <div
+                    class="w-[170px] h-[1px] bg-black z-10 absolute -rotate-45 -right-[28px] bottom-[54px]"
+                ></div>
+            </div>
+            <!-- for the right images -->
+            <div
+                class="h-full flex w-1/2 items-center justify-center flex-col gap-5 px-5 max-lg:w-[100%] max-sm:h-auto max-sm:py-2"
+            >
+                <!-- for heading -->
+                <div
+                    class="w-full font-bold text-4xl tracking-tight text-gray-800 max-lg:text-center max-sm:text-2xl"
+                >
+                    Learn Smart, Not Hard – Free Notes for Every Student!
+                </div>
+                <!-- for typing animation and listing -->
+                <div
+                    class="w-full h-20 font-bold text-4xl tracking-tight flex items-center justify-center rounded-lg bg-[#c2c1c1] text-gray-800 max-sm:text-2xl"
+                >
+                    <div
+                        id="typewriter"
+                        class="w-auto border-r-2 border-black"
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <!-- for the animation video part -->
+        <div
+            class="w-full flex items-center justify-between flex-row h-[400px] px-2 border-b border-black mix-blend-multiply max-sm:h-[200px]"
+        >
+            <video
+                class="mix-blend-multiply"
+                src="/video/robots.webm"
+                autoplay
+                loop
+                muted
+            ></video>
+        </div>
+        <!-- for reviews -->
+        <div
+            class="w-full grid grid-cols-3 gap-10 h-auto px-5 py-10 border-b border-black max-lg:grid-cols-2 max-sm:grid-cols-1"
+        >
+            <div
+                class="col-span-3 font-bold text-3xl flex items-center justify-center max-lg:col-span-2 max-sm:col-span-1"
+            >
+                Testimonials
+            </div>
+            <!-- grid 1 -->
+            <div
+                class="h-auto p-4 flex items-start justify-center gap-5 flex-col bg-[#c2c0c0] rounded-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="12.25"
+                    viewBox="0 0 448 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"
+                    />
+                </svg>
+                <!-- the main comments -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    "This website is a lifesaver! The handwritten notes and
+                    flowcharts made studying so much easier. Everything is
+                    well-organized and free!"
+                </div>
+                <!-- the name part -->
+                <div class="text-[#00195e] tracking-tight text-xl">- Aarav</div>
+            </div>
+            <!-- grid 2 -->
+            <div
+                class="h-auto p-4 flex items-start justify-center gap-5 flex-col bg-[#c2c0c0] rounded-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="12.25"
+                    viewBox="0 0 448 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"
+                    />
+                </svg>
+                <!-- the main comments -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    "Finding quality notes online is tough, but this website
+                    provides everything—flowcharts, question papers, and
+                    handwritten notes—all in one place. Absolutely amazing!"
+                </div>
+                <!-- the name part -->
+                <div class="text-[#00195e] tracking-tight text-xl">- Neha</div>
+            </div>
+            <!-- grid 3 -->
+            <div
+                class="h-auto p-4 flex items-start justify-center gap-5 flex-col bg-[#c2c0c0] rounded-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="12.25"
+                    viewBox="0 0 448 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"
+                    />
+                </svg>
+                <!-- the main comments -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    "Perfect for last-minute exam prep! The notes are
+                    well-structured, and the sample question papers helped me a
+                    lot. Highly recommended!"
+                </div>
+                <!-- the name part -->
+                <div class="text-[#00195e] tracking-tight text-xl">- Rahul</div>
+            </div>
+            <!-- grid 4 -->
+            <div
+                class="h-auto p-4 flex items-start justify-center gap-5 flex-col bg-[#c2c0c0] rounded-lg max-sm:hidden"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="12.25"
+                    viewBox="0 0 448 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"
+                    />
+                </svg>
+                <!-- the main comments -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    Best website for students! The flowcharts simplify complex
+                    topics, and the handwritten notes feel like personal
+                    guidance from a topper
+                </div>
+                <!-- the name part -->
+                <div class="text-[#00195e] tracking-tight text-xl">- Harsh</div>
+            </div>
+            <!-- grid 5 -->
+            <div
+                class="h-auto p-4 flex items-start justify-center gap-5 flex-col bg-[#c2c0c0] rounded-lg max-sm:hidden"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="12.25"
+                    viewBox="0 0 448 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"
+                    />
+                </svg>
+                <!-- the main comments -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    "No more struggling to find study materials. This website
+                    has everything I need, and the best part—it's completely
+                    free!"
+                </div>
+                <!-- the name part -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    - Simran
+                </div>
+            </div>
+            <!-- grid 6 -->
+            <div
+                class="h-auto p-4 flex items-start justify-center gap-5 flex-col bg-[#c2c0c0] rounded-lg max-sm:hidden"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="12.25"
+                    viewBox="0 0 448 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"
+                    />
+                </svg>
+                <!-- the main comments -->
+                <div class="text-[#00195e] tracking-tight text-xl">
+                    "This website is a hidden gem for students! The notes are
+                    super easy to understand, and the flowcharts make complex
+                    topics so simple. A must-have for exam prep!"
+                </div>
+                <!-- the name part -->
+                <div class="text-[#00195e] tracking-tight text-xl">- Priya</div>
+            </div>
+        </div>
+        <!-- for the footer part -->
+        <div
+            class="w-full flex items-center justify-around flex-row h-[50px] px-2 border-b border-black"
+        >
+            <!-- copyright part -->
+            <div class="flex items-center justify-center flex-row gap-3">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    width="14"
+                    viewBox="0 0 512 512"
+                >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        fill="#00195e"
+                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c31.2 31.2 81.9 31.2 113.1 0c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9c-50 50-131 50-181 0s-50-131 0-181s131-50 181 0c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0c-31.2-31.2-81.9-31.2-113.1 0s-31.2 81.9 0 113.1z"
+                    />
+                </svg>
+                <div class="text-[#00195e] tracking-tight">
+                    Copyright StudyBuddy
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
