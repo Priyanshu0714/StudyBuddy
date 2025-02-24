@@ -4,8 +4,8 @@ StudyBuddy is a free platform where students can access and share flowcharts, ha
 
 ## 📸 Preview
 
-![NotesHub Frontend](github-images/files.png)
-![NotesHub File](github-images/frontend.png)
+![NotesHub Frontend](github-images/frontend.png)
+![NotesHub File](github-images/files.png)
 
 ## 🛠️ Tech Stack
 
